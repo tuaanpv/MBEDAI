@@ -1,0 +1,3 @@
+/home/pt/Desktop/MBEDAI/test/websocket-master/build/CMakeFiles/lews.dir
+/home/pt/Desktop/MBEDAI/test/websocket-master/build/CMakeFiles/edit_cache.dir
+/home/pt/Desktop/MBEDAI/test/websocket-master/build/CMakeFiles/rebuild_cache.dir

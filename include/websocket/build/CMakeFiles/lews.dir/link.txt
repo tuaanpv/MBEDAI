@@ -1,0 +1,1 @@
+/usr/bin/c++ -D__STDC_CONSTANT_MACROS -rdynamic CMakeFiles/lews.dir/base64.cpp.o CMakeFiles/lews.dir/connection.cpp.o CMakeFiles/lews.dir/frame.cpp.o CMakeFiles/lews.dir/websocket.cpp.o CMakeFiles/lews.dir/md5/md5.cpp.o CMakeFiles/lews.dir/demo/demo.cpp.o CMakeFiles/lews.dir/demo/user.cpp.o -o lews  -levent /usr/lib/x86_64-linux-gnu/libcrypto.a -ldl 
