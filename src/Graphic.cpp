@@ -267,7 +267,7 @@ cv::Size Graphic::resizedSize(cv::Size orig)
         h = 800;
         w = w * ((float)h / (float)h_orig);
     }
-    _scaled_ratio = (float)orig.width/(float)w;
+    _scaled_ratio = (float)w/(float)orig.width;
     // std::cout << "Video scaled ratio: " << (int)_scaled_ratio << std::endl;
     return cv::Size(w, h);
 }
