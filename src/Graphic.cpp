@@ -213,13 +213,13 @@ void Graphic::readImage()
             frame_skipped = false;
         }
 
-        if(_scaled_ratio > 1.0)
-        {
-            // std::cout << "_scaled_ratio: " << _scaled_ratio << std::endl;
-            // cv::resize(frame, frame, cv::Size(), 1.0/_scaled_ratio, 1.0/_scaled_ratio);
-            cv::resize(frame, frame, _window_size);
-            // std::cout << "frame: " << frame.rows << " * " << frame.cols << std::endl;
-        }
+        // if(_scaled_ratio > 1.0)
+        // {
+        //     // std::cout << "_scaled_ratio: " << _scaled_ratio << std::endl;
+        //     // cv::resize(frame, frame, cv::Size(), 1.0/_scaled_ratio, 1.0/_scaled_ratio);
+        //     cv::resize(frame, frame, _window_size);
+        //     // std::cout << "frame: " << frame.rows << " * " << frame.cols << std::endl;
+        // }
 
         FrameInfo current_frame;
         current_frame.frame = frame;
@@ -312,7 +312,7 @@ void Graphic::writeOutVideoFile(cv::Mat image)
 {
     if(_pipeout == NULL)
     {
-        _output_filename = "../result/video_" + getTimeStamp() + ".h265";
+        _output_filename = "../result/video_" + getTimeStamp() + _vid_info.codec;
         // _output_filename = "rtsp://admin:12345@127.0.0.1:554/live";
         std::cout << "Output file at: " << _output_filename << endl;
 
